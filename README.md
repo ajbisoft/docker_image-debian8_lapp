@@ -1,8 +1,9 @@
-# Docker image: debian9_lapp:with_wkhtmltopdf
+# Docker image: debian9_lapp
 
 ## Description
 
 Official Debian 9 (debian:9) + apache2 + php7.1 + postgresql-client + wkhtmltopdf docker image with some customization:
+* version debian9_lapp:with_wkhtmltopdf also has wkhtmltopdf package installed
 * mod_rewrite apache2 module enabled
 * DocumentRoot set to /var/www/public
 * /etc/apt/sources.list modified to include stretch-updates and to use Ondřej Surý PHP 7.1 packages
@@ -18,7 +19,7 @@ There are two main run-time settings that may need to be passed to newly created
 ## Example
 
 To successfully start a new container using this image please specify port (here port 80) and volume options as in following example:
-`docker run -dp 80:80 -v <path_to_your_datadir>:/var/www/ --name <your-app-name> ajbisoft/debian9-lapp:with_wkhtmltopdf`
+`docker run -dp 80:80 -v <path_to_your_datadir>:/var/www/ --name <your-app-name> ajbisoft/debian9-lapp`
 
 ## Summary
 
