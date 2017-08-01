@@ -1,8 +1,9 @@
-# Docker image: debian8_lapp
+# Docker image: debian8_lapp:with_wkhtmltopdf
 
 ## Description
 
 Official Debian 8 (debian:8) + apache2 + php5 + postgresql-client docker image with some customization:
+* wkhtmltopdf packaged installed additionally
 * mod_rewrite apache2 module enabled
 * DocumentRoot set to /var/www/public
 * /etc/apt/sources.list modified to include jessie-updates and to use Polish mirror by default
