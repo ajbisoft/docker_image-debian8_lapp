@@ -1,8 +1,9 @@
-# Docker image: debian9_lap
+# Docker image: debian9_lapp
 
 ## Description
 
 Official Debian 9 (debian:9) + apache2 + php7.1 + postgresql-client docker image with some customization:
+* version debian9_lapp:with_wkhtmltopdf also has wkhtmltopdf package installed
 * mod_rewrite apache2 module enabled
 * DocumentRoot set to /var/www/public
 * /etc/apt/sources.list modified to include stretch-updates and to use Ondřej Surý PHP 7.1 packages
