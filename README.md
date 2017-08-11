@@ -3,7 +3,7 @@
 ## Description
 
 Official Debian 9 (debian:9) + apache2 + php7.1 + postgresql-client + wkhtmltopdf docker image with some customization:
-* version debian9_lapp:with_wkhtmltopdf also has wkhtmltopdf package installed
+* version debian9_lapp:with_wkhtmltopdf also has stable wkhtmltopdf package (0.12.4) from http://wkhtmltopdf.org installed
 * mod_rewrite apache2 module enabled
 * DocumentRoot set to /var/www/public
 * /etc/apt/sources.list modified to include stretch-updates and to use Ondřej Surý PHP 7.1 packages
